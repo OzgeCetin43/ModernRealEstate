@@ -1,0 +1,235 @@
+@import "../../app.scss";
+
+.hero-background {
+  height: 85vh;
+  width: calc(100vw - 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../assets/images/home-hero.jpg");
+  background-position: center;
+  margin: 1.25rem;
+
+  @include mobile {
+    justify-content: flex-start;
+    padding: 4rem 0;
+  }
+
+  .hero-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #fff;
+
+    .hero-content {
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+
+      @include mobile {
+        width: 90%;
+      }
+
+      .hero-title {
+        font-size: 4rem;
+
+        @include mobile {
+          font-size: 1.75rem;
+          width: 100%;
+        }
+
+        p {
+          font-family: "Homemade Apple", cursive;
+        }
+
+        span {
+          color: #ed7d3a;
+          font-family: "Homemade Apple", cursive;
+        }
+      }
+
+      .hero-description {
+        font-size: 1.25rem;
+        line-height: 2;
+        width: 60%;
+
+        @include mobile {
+          font-size: 1rem;
+          width: 100%;
+        }
+      }
+
+      .hero-reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .reviews-text {
+          font-size: 1.25rem;
+        }
+
+        .star-container {
+          display: flex;
+          gap: 1rem;
+
+          svg {
+            stroke-width: 1px;
+          }
+        }
+      }
+
+      .hero-content-actions {
+        display: flex;
+        gap: 1rem;
+
+        @include mobile {
+          flex-direction: column;
+        }
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          padding: 0.5rem 2rem;
+          border-radius: 1.25rem;
+
+          @include mobile {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+          }
+        }
+
+        a:first-child {
+          background-color: #ed7d3a;
+        }
+
+        a:nth-child(2) {
+          background-color: #2f3d7e;
+        }
+      }
+    }
+  }
+
+  .hero-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    bottom: -7rem;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    border: 1px solid #2121211a;
+    box-shadow: 1px 1px 0.25rem 1px #2121211a;
+
+    @include mobile {
+      width: 90%;
+      position: relative;
+      bottom: 0;
+    }
+
+    .form-tab {
+      padding: 0 0 0.5rem;
+      border-bottom: 1px solid #2121211a;
+      display: flex;
+      gap: 1rem;
+      margin: 0 0 1rem;
+
+      .tab-button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        padding: 0.5rem 2rem;
+        color: #21212180;
+        font-weight: 500;
+        cursor: pointer;
+
+        &.active {
+          transition: background-color 1s ease-in-out;
+          background-color: #ed7d3a;
+          border-radius: 1.25rem;
+          color: #fff;
+        }
+      }
+    }
+
+    .hero-form {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #212121;
+      width: 100%;
+      gap: 2rem;
+      font-size: 0.75rem;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .input-label {
+          font-weight: 500;
+        }
+
+        .search-panel {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          width: 100%;
+
+          @include mobile {
+            justify-content: space-between;
+          }
+        }
+
+        .input-field,
+        .dropdown-list {
+          border: none;
+          padding: 1rem 0;
+          width: 160px;
+          outline: none;
+
+          @include mobile {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .search-button {
+      background-color: #2f3d7e;
+      padding: 0.5rem 1.5rem;
+      border-radius: 1.25rem;
+      border: none;
+      outline: none;
+      font-size: 0.85rem;
+      color: #fff;
+      cursor: pointer;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -37,7 +37,7 @@ const About: React.FC = () => {
           <p className="about-hero-description">
             <span>Jivux</span> developed a platform for the Real Estate
             marketplace that allows buyers and sellers to easily execute a
-            transaction on their own.The platform drives efficency, cost
+            transaction on their own. The platform drives efficency, cost
             transparency and control into the hands of the consumers.{" "}
             <span>Jivux</span> is Real Estate Redefined.
           </p>

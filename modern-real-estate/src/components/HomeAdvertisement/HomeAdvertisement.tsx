@@ -2,6 +2,7 @@ import React from "react";
 
 import hero from "../../assets/images/home-advertisement-hero.webp";
 import { homeAdvertisements } from "../../assets/data/homeAdvertisements";
+
 import Reveal from "../Reveal/Reveal";
 
 import "./homeAdvertisement.scss";

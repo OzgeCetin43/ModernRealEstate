@@ -7,6 +7,7 @@ import company3 from "../../assets/images/company-3.webp";
 import company4 from "../../assets/images/company-4.webp";
 import company5 from "../../assets/images/company-5.webp";
 import company6 from "../../assets/images/company-6.webp";
+
 import Reveal from "../Reveal/Reveal";
 
 import "./companies.scss";

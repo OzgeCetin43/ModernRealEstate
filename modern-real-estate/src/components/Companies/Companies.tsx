@@ -22,26 +22,18 @@ const Companies: React.FC = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, ease: easing }}
     >
-      <h4 className="companies-container-title">Trusted by the world’s best</h4>
+      <Reveal>
+        <h4 className="companies-container-title">
+          Trusted by the world’s best
+        </h4>
+      </Reveal>
       <div className="company-list">
-        <Reveal>
-          <img src={company1} alt="companies" />
-        </Reveal>
-        <Reveal>
-          <img src={company2} alt="companies" />
-        </Reveal>
-        <Reveal>
-          <img src={company3} alt="companies" />
-        </Reveal>
-        <Reveal>
-          <img src={company4} alt="companies" />
-        </Reveal>
-        <Reveal>
-          <img src={company5} alt="companies" />
-        </Reveal>
-        <Reveal>
-          <img src={company6} alt="companies" />
-        </Reveal>
+        <img src={company1} alt="companies" />
+        <img src={company2} alt="companies" />
+        <img src={company3} alt="companies" />
+        <img src={company4} alt="companies" />
+        <img src={company5} alt="companies" />
+        <img src={company6} alt="companies" />
       </div>
     </motion.div>
   );

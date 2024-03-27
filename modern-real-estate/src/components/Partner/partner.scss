@@ -30,11 +30,13 @@
 
     .partner-title {
       font-size: 4rem;
+      padding-left: 1.5rem;
       width: 90%;
 
       @include mobile {
         font-size: 2rem;
         width: 100%;
+        padding-left: 0;
       }
     }
 

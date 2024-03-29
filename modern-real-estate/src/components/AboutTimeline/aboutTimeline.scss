@@ -1,0 +1,117 @@
+@import "../../app.scss";
+
+.about-timeline-container {
+  padding: 5rem;
+  display: flex;
+
+  @include mobile {
+    padding: 3rem 0.5rem 0;
+    flex-direction: column;
+  }
+
+  .about-timeline-container-left,
+  .about-timeline-container-right {
+    width: 50%;
+
+    @include mobile {
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  .about-timeline-container-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .about-timeline-container-right {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .about-timeline-subtitle {
+      display: flex;
+      align-items: center;
+      color: #2f3d7e;
+
+      &::before,
+      &::after {
+        content: " ";
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        background-color: #2f3d7e;
+        margin: 0 0.5rem;
+      }
+    }
+
+    .about-timeline-title {
+      font-size: 4rem;
+      color: #212121;
+
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+
+    .about-timeline-description {
+      font-size: 1.25rem;
+      line-height: 2;
+      color: #212121;
+
+      @include mobile {
+        font-size: 1rem;
+      }
+    }
+
+    .timeline {
+      .checkpoint {
+        color: #212121;
+        padding: 1rem 0;
+        position: relative;
+
+        &:nth-child(odd) div {
+          border: 2px solid #2f3d7e;
+
+          .timeline-title {
+            color: #2f3d7e;
+          }
+        }
+
+        &:nth-child(even) div {
+          border: 2px solid #ed7d3a;
+
+          .timeline-title {
+            color: #ed7d3a;
+          }
+        }
+
+        div {
+          border-radius: 1.25rem;
+          padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+
+          .timeline-title {
+            font-size: 1.25rem;
+          }
+
+          .timeline-description {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}

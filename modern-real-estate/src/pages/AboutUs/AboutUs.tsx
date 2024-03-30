@@ -5,6 +5,7 @@ import AboutCompany from "../../components/AboutCompany/AboutCompany";
 import Companies from "../../components/Companies/Companies";
 import AboutTimeline from "../../components/AboutTimeline/AboutTimeline";
 import Services from "../../components/Services/Services";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 import "./aboutUs.scss";
 
@@ -16,6 +17,7 @@ const AboutUs: React.FC = () => {
       <Companies />
       <AboutTimeline />
       <Services />
+      <WhyChooseUs />
     </div>
   );
 };

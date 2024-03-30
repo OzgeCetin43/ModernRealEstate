@@ -97,10 +97,16 @@ const ListingProperty: React.FC = () => {
             ({ id, title, image, bedroom, price, latitude, longitude }) => (
               <Marker key={id} position={[latitude, longitude]} icon={icon}>
                 <Popup>
-                  <img src={image} alt="property" />
-                  <h1>{title}</h1>
-                  <p>{price}</p>
-                  <small>Bedroom: {bedroom}</small>
+                  <img
+                    className="property-marker-image"
+                    src={image}
+                    alt="property"
+                  />
+                  <h1 className="property-marker-title">{title}</h1>
+                  <p className="property-marker-price">${price}</p>
+                  <small className="property-marker-info">
+                    Bedroom: <span>{bedroom}</span>
+                  </small>
                 </Popup>
               </Marker>
             )

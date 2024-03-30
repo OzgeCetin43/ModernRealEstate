@@ -1,0 +1,84 @@
+@import "../../app.scss";
+
+.contact-seller-container {
+  padding: 1rem 1.25rem;
+  background: url("../../assets/images/contact-seller-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+
+  .contact-seller-container-left,
+  .contact-seller-container-right {
+    width: 50%;
+    padding: 1rem;
+
+    @include mobile {
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  .contact-seller-container-left {
+    .contact-seller-title {
+      font-size: 3.5rem;
+
+      @include mobile {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+
+    .contact-seller-description {
+      font-size: 1.25rem;
+      line-height: 2;
+
+      @include mobile {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+    .contact-seller-button-container {
+      background-color: #ed7d3a;
+      color: #fff;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: fit-content;
+      padding: 1rem 2rem;
+      margin: 1rem 0;
+      border-radius: 1.25rem;
+      cursor: pointer;
+
+      @include mobile {
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      button {
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.25rem;
+        border: none;
+      }
+    }
+  }
+
+  .contact-seller-container-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+    }
+  }
+}

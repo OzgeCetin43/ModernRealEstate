@@ -4,6 +4,7 @@ import Partner from "../../components/Partner/Partner";
 import AboutCompany from "../../components/AboutCompany/AboutCompany";
 import Companies from "../../components/Companies/Companies";
 import AboutTimeline from "../../components/AboutTimeline/AboutTimeline";
+import OurTeam from "../../components/OurTeam/OurTeam";
 import Services from "../../components/Services/Services";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
@@ -16,6 +17,7 @@ const AboutUs: React.FC = () => {
       <AboutCompany />
       <Companies />
       <AboutTimeline />
+      <OurTeam />
       <Services />
       <WhyChooseUs />
     </div>

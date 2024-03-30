@@ -1,0 +1,19 @@
+@import "../../app.scss";
+
+.valuable-clients-container {
+  padding: 3rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @include mobile {
+    margin: 2rem 0;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 5rem;
+  }
+}

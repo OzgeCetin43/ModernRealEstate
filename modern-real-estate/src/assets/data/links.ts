@@ -17,26 +17,31 @@ export const links: Link[] = [
   },
   {
     id: 3,
+    label: "Listing",
+    href: "/listing",
+  },
+  {
+    id: 4,
     label: "Properties",
     href: "/properties",
   },
   {
-    id: 4,
+    id: 5,
     label: "Gallery",
     href: "/gallery",
   },
   {
-    id: 5,
+    id: 6,
     label: "Location",
     href: "/location",
   },
   {
-    id: 6,
+    id: 7,
     label: "Blog",
     href: "/blog",
   },
   {
-    id: 7,
+    id: 8,
     label: "Contact Us",
     href: "/contact-us",
   },

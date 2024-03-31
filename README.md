@@ -3,4 +3,4 @@ Home Page
 About Page
 ![localhost_5173_about-us](https://github.com/OzgeCetin43/ModernRealEstate/assets/32112164/a5b2ac7d-cc1b-409d-84b8-270f162e167a)
 Listing Page
-![localhost_5173_listing](https://github.com/OzgeCetin43/ModernRealEstate/assets/32112164/c4dfcbfc-aa4b-4301-9ccf-9544afbb3f29)
+![localhost_5174_listing (1)](https://github.com/OzgeCetin43/ModernRealEstate/assets/32112164/ceaf9a12-d3d6-4f96-accc-8e6d29cf73e8)

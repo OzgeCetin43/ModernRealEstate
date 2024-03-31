@@ -7,8 +7,10 @@
   background-position: center;
   display: flex;
   align-items: center;
+  padding: 5rem 1.25rem;
 
   @include mobile {
+    padding: 2rem 1.25rem;
     flex-direction: column-reverse;
   }
 
@@ -24,6 +26,15 @@
   }
 
   .contact-seller-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5rem;
+
+    @include mobile {
+      padding: 0 2rem;
+    }
+
     .contact-seller-title {
       font-size: 3.5rem;
 
@@ -66,7 +77,6 @@
         outline: none;
         background-color: transparent;
         color: #fff;
-        font-size: 1.25rem;
         border: none;
       }
     }

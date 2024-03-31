@@ -1,0 +1,89 @@
+@import "../../app.scss";
+
+.choose-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.25rem;
+  background-image: url("../../assets/images/choose-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #212121;
+  gap: 2rem;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 3rem 1.25rem;
+  }
+
+  .choose-inner-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .choose-container-item {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      border: 1px solid #212121;
+      padding: 2rem;
+      border-radius: 1.25rem;
+      width: 80%;
+
+      @include mobile {
+        flex-direction: column;
+        width: 90%;
+      }
+
+      .choose-container-item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        .choose-title {
+          text-align: center;
+        }
+
+        .choose-description {
+          width: 70%;
+          line-height: 2;
+
+          @include mobile {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .choose-button-container {
+      background-color: #ed7d3a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      color: #fff;
+      position: relative;
+      top: -1.5rem;
+      padding: 0.5rem 2rem;
+      border-radius: 1.25rem;
+
+      svg {
+        font-size: 1.5rem;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

@@ -31,6 +31,13 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      height: 90vh;
+      overflow-y: scroll;
+
+      @include mobile {
+        height: auto;
+        overflow-y: visible;
+      }
 
       .property-item {
         display: flex;
@@ -143,10 +150,8 @@
   .listing-property-container-right {
     width: 45%;
     height: 100vh;
-    position: sticky;
-    top: 1rem;
-    bottom: 1rem;
-    right: 0;
+    position: relative;
+    top: 25vh;
 
     @include mobile {
       width: 90%;

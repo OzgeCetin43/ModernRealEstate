@@ -12,13 +12,13 @@ import ListPropertyFilter from "../ListPropertyFilter/ListPropertyFilter";
 
 import "leaflet/dist/leaflet.css";
 import "./listingProperty.scss";
+import marker from "leaflet/dist/images/marker-icon.png";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 
 const ListingProperty: React.FC = () => {
   const icon = new L.Icon({
-    iconUrl:
-      "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|abcdef&chf=a,s,ee00FFFF",
+    iconUrl: marker,
   });
 
   return (

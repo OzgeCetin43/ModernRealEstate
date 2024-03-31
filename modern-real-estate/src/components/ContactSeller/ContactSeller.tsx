@@ -13,8 +13,8 @@ const ContactSeller: React.FC = () => {
           Find for your dream home and increase your investment opportunities
         </h1>
         <p className="contact-seller-description">
-          Showcase all your properties in a truly modern manner. Welcome to
-          Jivux.
+          We provide the most suitable and quality real estate. Showcase all
+          your properties in a truly modern manner. Welcome to Jivux.
         </p>
         <div className="contact-seller-button-container">
           <IoPhonePortrait />

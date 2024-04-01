@@ -6,6 +6,7 @@ import ValuableClients from "../../components/ValuableClients/ValuableClients";
 import ListingContact from "../../components/ListingContact/ListingContact";
 import ContactSeller from "../../components/ContactSeller/ContactSeller";
 import Choose from "../../components/Choose/Choose";
+import PropertyChoices from "../../components/PropertyChoices/PropertyChoices";
 
 import "./listing.scss";
 
@@ -18,6 +19,7 @@ const Listing: React.FC = () => {
       <ListingContact />
       <ContactSeller />
       <Choose />
+      <PropertyChoices />
     </div>
   );
 };

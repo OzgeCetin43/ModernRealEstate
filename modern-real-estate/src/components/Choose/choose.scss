@@ -26,11 +26,12 @@
     .choose-container-item {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 3rem;
-      border: 1px solid #212121;
+      border: 2px solid #ed7d3a;
       padding: 2rem;
       border-radius: 1.25rem;
-      width: 80%;
+      width: 65%;
 
       @include mobile {
         flex-direction: column;
@@ -44,7 +45,9 @@
         gap: 1rem;
 
         .choose-title {
-          text-align: center;
+          @include mobile {
+            text-align: center;
+          }
         }
 
         .choose-description {
